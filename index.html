@@ -71,7 +71,7 @@
                 Apple Iphone 13 Pro Max
             </h5>
             <p class="mb-8 text-center">
-                There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.
+                There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.
             </p>
             <button class="bg-[#0D6EFD] rounded-lg py-4 px-10 text-[#FFFFFF] text-xl font-bold">
                 Buy Now
@@ -94,11 +94,11 @@
         <!-- searchbar started -->
          <section>
             <h3 class="font-semibold text-4xl text-[#100F0F]">
-                Search Your Phone
+                Search your phone
             </h3>
             <div class="flex justify-center mt-8">
-                <input class="w-[600px] bg-[#100F0F0D] bg-opacity-5 rounded-lg placeholder:p-10" type="search" name="" id="" placeholder="Search your phone">
-                <button onclick="loading()" id="search-button" class="bg-[#0D6EFD] rounded-lg py-4 px-10 text-[#FFFFFF] text-xl font-bold">
+                <input id="search-input" class="w-[600px] bg-[#100F0F0D] bg-opacity-5 rounded-lg placeholder:p-10" type="search" name="" id="" placeholder="Search Your Phone">
+                <button id="search-button" onclick="handleSearch()" class="bg-[#0D6EFD] rounded-lg py-4 px-10 text-[#FFFFFF] text-xl font-bold">
                     Search
                 </button>
             </div>
@@ -114,13 +114,18 @@
             
          </section>
          
-         <!-- Spinner Started -->
-         <section class="flex justify-center mt-12">
-            <div id="spinner" class="loader"></div>
+         <!-- spinner Started -->
+         <section class="flex justify-center my-12">
+            <div id="spinner" class="loader hidden"></div>
          </section>
-         <!-- Spinner Ended --> 
+         <!-- spinner Ended --> 
 
         <!-- all phone section ended -->
+
+        <!-- show all button started -->
+         <button id="show-all-button" onclick="handleShowAll()" class="bg-[#0D6EFD] rounded-lg py-4 px-10 text-[#FFFFFF] text-xl font-bold mb-12 hidden">
+            Show All
+         </button>
          
      </main>
 
